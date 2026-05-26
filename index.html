@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dmitry Valevich - CV</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="cv-container">
+        <!-- Левая колонка: Фото, контакты, навыки, языки -->
+        <aside class="sidebar">
+            <div class="profile-section">
+                <!-- Вставьте ссылку на ваше фото/аватар вместо заглушки -->
+                <img src="./assets/img/myavatar.jpeg"alt="Dmitry Valevich" class="avatar">
+                <h1>Dmitry Valevich</h1>
+                <p class="subtitle">Junior Frontend Developer</p>
+            </div>
+
+            <section class="contacts">
+                <h2>Contact Info</h2>
+                <ul>
+                    <li><strong>Phone:</strong> <a href="tel:+380684489766">+38 068 4489766</a></li>
+                    <li><strong>E-mail:</strong> <a href="mailto:ankaholoshina@gmail.com">ankaholoshina@gmail.com</a></li>
+                    <li><strong>Telegram:</strong> <a href="https://t.me" target="_blank">@hannavoloshyna</a></li>
+                    <li><strong>LinkedIn:</strong> <a href="https://linkedin.com" target="_blank">Profile</a></li>
+                    <li><strong>Behance:</strong> <a href="https://behance.net" target="_blank">Portfolio</a></li>
+                </ul>
+            </</section>
+
+            <section class="skills">
+                <h2>Skills</h2>
+                <ul>
+                    <li>HTML5 & CSS3</li>
+                    <li>JavaScript Basics</li>
+                    <li>Git & GitHub</li>
+                    <li>VS Code / IntelliJ IDEA</li>
+                    <li>Adobe Photoshop</li>
+                    <li>Adobe Illustrator</li>
+                    <li>Adobe InDesign</li>
+                </ul>
+            </section>
+
+            <section class="languages">
+                <h2>Languages</h2>
+                <p><strong>English:</strong> Intermediate / Upper-intermediate (PROFICIENT level according to EF SET).</p>
+            </section>
+        </aside>
+
+        <!-- Правая колонка: О себе, пример кода, курсы -->
+        <main class="main-content">
+            <section class="about">
+                <h2>Briefly About Myself</h2>
+                <p>Having started my career as a layout designer in a local newspaper with minimum skills, I became proficient in printing design. My keen interest in printing technologies led me to working as a Prepress and DTP Engineer in the largest printing house in my city, where I continued self-learning, examining the process of creating wine and food labels, magazines and other printed goods.</p>
+                <p>Three years ago I've become passionate about retouching. I've mastered different retouching techniques, learned to work with graphic tablet, become an advanced Photoshop user and found my first job as a retoucher.</p>
+                <p>Remote work as a retoucher gives me extra free time, which I spend learning Frontend Development. I'm interested in Web Development because this occupation provides endless possibilities for professional growth, besides there's a huge amount of free high quality resources for self-education and a large community of developers.</p>
+                <p>I believe, that my ability to learn and to gain new skills will lead me through this path of becoming a proficient Frontend Developer.</p>
+            </section>
+
+            <section class="code-example">
+                <h2>Code Example</h2>
+                <p class="code-description">
+                    <em>Peak array index KATA from CODEWARS: Given an array of ints, return the index such that the sum of the elements to the right of that index equals the sum of the elements to the left of that index.</em>
+                </p>
+                <pre><code><span class="keyword">function</span> <span class="function">peak</span>(arr) {
+  <span class="keyword">for</span> (<span class="keyword">let</span> i = <span class="number">1</span>; i &lt; arr.length - <span class="number">1</span>; i++) {
+    <span class="keyword">let</span> leftSum = arr.slice(<span class="number">0</span>, i).reduce((acc, curr) => acc + curr);
+    <span class="keyword">let</span> rightSum = arr.slice(i + <span class="number">1</span>).reduce((acc, curr) => acc + curr);
+    <span class="keyword">if</span> (leftSum === rightSum) {
+      <span class="keyword">return</span> i;
+    }
+  }
+  <span class="keyword">return</span> -<span class="number">1</span>;
+}</code></pre>
+            </section>
+
+            <section class="courses">
+                <h2>Courses</h2>
+                <ul>
+                    <li>
+                        <strong>JavaScript Manual</strong> on 
+                        <a href="https://javascript.ru" target="_blank">learn.javascript.ru</a> 
+                        <span class="badge">In Progress</span>
+                    </li>
+                    <li>
+                        <strong>RS Schools Course</strong> <JavaScript/Front-end. Stage 0> 
+                        <span class="badge">In Progress</span>
+                    </li>
+                </ul>
+            </</section>
+        </main>
+    </div>
+
+</body>
+</html>
